@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans Jp', "小塚ゴシック Pr6N R", "Hiragino Sans", Meiryo, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.6;
+  -webkit-font-variant-ligatures: none;
+          font-variant-ligatures: none;
+  color: #444444;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.d-fl {
+  display: -webkit-box;
+  display: -ms-box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+  height: auto;
+}
+
+.inner {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.strengths-clinic {
+  width: 100%;
+  background: #5A9CD5;
+  position: relative;
+  padding: 50px 0 30px;
+}
+
+.strengths-clinic:after {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  background-image: url(../img/strengths-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.strengths-clinic .inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.strengths-clinic .strengths-left {
+  width: 60%;
+}
+
+.strengths-clinic .strengths-left h2 {
+  margin-bottom: 20px;
+}
+
+.strengths-clinic .strengths-left p {
+  line-height: 2;
+  color: #fff;
+  font-size: 16px;
+}
+
+.strengths-clinic .strengths-right {
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: -26px;
+  z-index: 1;
+}
+/*# sourceMappingURL=style.css.map */

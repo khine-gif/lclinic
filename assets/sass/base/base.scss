@@ -1,0 +1,110 @@
+@charset "UTF-8";
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+$color01: #444444;
+$color02: #5A9CD5;
+$color03: #1E94D4;
+$color04: #fff;
+%common01 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    @extend %common01;
+}
+
+body {
+    @extend %common01;
+}
+
+body {
+    font-family: 'Noto Sans Jp', "小塚ゴシック Pr6N R", "Hiragino Sans", Meiryo, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.6;
+    font-variant-ligatures: none;
+    color: $color01;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.d-fl {
+    display: -webkit-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: $color01;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+    height: auto;
+}
+
+.inner {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.strengths-clinic {
+    width: 100%;
+    background: $color02;
+    position: relative;
+    padding: 50px 0 30px;
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        bottom: -100px;
+        background-image: url(../img/strengths-bg.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    .inner {
+        justify-content: space-between;
+        position: relative;
+    }
+    .strengths-left {
+        width: 60%;
+        h2 {
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 2;
+            color: $color04;
+            font-size: 16px;
+        }
+    }
+    .strengths-right {
+        width: 30%;
+        position: absolute;
+        right: 0;
+        top: -26px;
+        z-index: 1;
+    }
+}
