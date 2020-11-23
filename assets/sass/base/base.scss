@@ -72,9 +72,79 @@ img {
     margin: 0 auto;
 }
 
-.menu-inn {
+$size50: 50%;
+.head-inn {
+    width: 93%;
+    margin: 20px auto;
+    position: relative;
     justify-content: space-between;
-    padding: 20px 5% 15px 0;
+    align-items: center;
+}
+
+.logo {
+    max-width: 375px;
+    width: 35%;
+}
+
+.head-right {
+    width: 62%;
+    justify-content: flex-end;
+}
+
+%common02 {
+    max-width: 257px;
+    width: 45%;
+}
+
+.ph-num01 {
+    @extend %common02;
+    margin-right: 2%;
+}
+
+.line-link {
+    @extend %common02;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    -moz-transform: $property;
+    transform: $property;
+}
+
+.hamburger-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: $size50;
+    background: $color02;
+    .line {
+        background: $color04;
+        width: 30px;
+        height: 3px;
+        border-radius: 50px;
+        position: absolute;
+        @include transform(translate(-$size50, -$size50));
+        left: $size50;
+        top: $size50;
+    }
+    .line01 {
+        top: 30%;
+    }
+    .line03 {
+        top: 70%;
+    }
+}
+
+.nav-menu01 {
+    display: none;
+}
+
+.menu-inn02 {
+    justify-content: space-between;
+    padding: 20px 0 15px 0;
     a {
         font-size: $font-size16px;
         font-weight: $font-weight600;

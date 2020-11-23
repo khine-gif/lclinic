@@ -193,14 +193,81 @@ img {
   margin: 0 auto;
 }
 
-.menu-inn {
+.head-inn {
+  width: 93%;
+  margin: 20px auto;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 5% 15px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.menu-inn a {
+.logo {
+  max-width: 375px;
+  width: 35%;
+}
+
+.head-right {
+  width: 62%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.ph-num01, .line-link {
+  max-width: 257px;
+  width: 45%;
+}
+
+.ph-num01 {
+  margin-right: 2%;
+}
+
+.hamburger-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #5A9CD5;
+}
+
+.hamburger-button .line {
+  background: #fff;
+  width: 30px;
+  height: 3px;
+  border-radius: 50px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.hamburger-button .line01 {
+  top: 30%;
+}
+
+.hamburger-button .line03 {
+  top: 70%;
+}
+
+.nav-menu01 {
+  display: none;
+}
+
+.menu-inn02 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0 15px 0;
+}
+
+.menu-inn02 a {
   font-size: 16px;
   font-weight: 600;
   padding: 0 10px 3px 10px;
@@ -210,7 +277,7 @@ img {
   color: #1E94D4;
 }
 
-.menu-inn a:hover {
+.menu-inn02 a:hover {
   border-bottom: 2px solid #48A9D3;
 }
 
