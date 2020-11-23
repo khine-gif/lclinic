@@ -42,6 +42,8 @@ body {
 a {
   text-decoration: none;
   color: #444444;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 img {
@@ -54,6 +56,27 @@ img {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.menu-inn {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 5% 15px 0;
+}
+
+.menu-inn a {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0 10px 3px 10px;
+  display: block;
+  border-bottom: 2px solid #fff;
+  vertical-align: middle;
+  color: #1E94D4;
+}
+
+.menu-inn a:hover {
+  border-bottom: 2px solid #48A9D3;
 }
 
 .strengths-clinic {

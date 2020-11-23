@@ -24,6 +24,9 @@ body {
     @extend %common01;
 }
 
+$font-weight500: 500;
+$font-weight600: 600;
+$font-size16px: 16px;
 body {
     font-family: 'Noto Sans Jp', "小塚ゴシック Pr6N R", "Hiragino Sans", Meiryo, sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -32,7 +35,7 @@ body {
     line-height: 1.6;
     font-variant-ligatures: none;
     color: $color01;
-    font-weight: 500;
+    font-weight: $font-weight500;
     letter-spacing: 1px;
 }
 
@@ -54,6 +57,7 @@ body {
 a {
     text-decoration: none;
     color: $color01;
+    transition: 0.3s;
 }
 
 img {
@@ -66,6 +70,23 @@ img {
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.menu-inn {
+    justify-content: space-between;
+    padding: 20px 5% 15px 0;
+    a {
+        font-size: $font-size16px;
+        font-weight: $font-weight600;
+        padding: 0 10px 3px 10px;
+        display: block;
+        border-bottom: 2px solid #fff;
+        vertical-align: middle;
+        color: $color03;
+        &:hover {
+            border-bottom: 2px solid #48A9D3;
+        }
+    }
 }
 
 .strengths-clinic {
@@ -97,7 +118,7 @@ img {
         p {
             line-height: 2;
             color: $color04;
-            font-size: 16px;
+            font-size: $font-size16px;
         }
     }
     .strengths-right {
